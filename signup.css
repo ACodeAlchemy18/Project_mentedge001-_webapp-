@@ -100,3 +100,101 @@ button {
     from { transform: scale(0.7); opacity: 0; }
     to { transform: scale(1); opacity: 1; }
 }
+/* =========================
+   MOBILE RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 900px) {
+
+    .app {
+        width: 95%;
+        height: auto;
+        flex-direction: column;
+        margin: 20px 0;
+    }
+
+    .left {
+        width: 100%;
+        min-height: 220px;
+        text-align: center;
+        padding: 30px 20px;
+        align-items: center;
+    }
+
+    .left h1 {
+        font-size: 38px;
+        margin-bottom: 10px;
+    }
+
+    .left p {
+        font-size: 16px;
+    }
+
+    .right {
+        width: 100%;
+        padding: 20px;
+        overflow-y: visible;
+    }
+
+    .row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    input,
+    select,
+    button {
+        font-size: 16px;
+    }
+
+    .popup-box {
+        width: 90%;
+    }
+}
+
+
+/* EXTRA SMALL DEVICES */
+
+@media (max-width: 500px) {
+
+    body {
+        padding: 10px;
+        align-items: flex-start;
+    }
+
+    .app {
+        border-radius: 15px;
+    }
+
+    .left {
+        min-height: 180px;
+        padding: 25px 15px;
+    }
+
+    .left h1 {
+        font-size: 30px;
+    }
+
+    .left p {
+        font-size: 14px;
+    }
+
+    .right {
+        padding: 15px;
+    }
+
+    .section h3 {
+        font-size: 18px;
+    }
+
+    input,
+    select {
+        padding: 12px;
+        font-size: 15px;
+    }
+
+    button {
+        padding: 13px;
+        font-size: 15px;
+    }
+}
